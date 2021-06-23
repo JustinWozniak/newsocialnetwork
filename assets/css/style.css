@@ -1,0 +1,129 @@
+body {
+    font-family: roboto, sans-serif;
+    background-color: #E9EBEE;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.main {
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.left-side {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side {
+    flex-basis: 50%;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 33px;
+}
+
+
+.sign-up-form {
+    margin-top: 10px;
+}
+
+.text-field {
+    height: 25px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.text-input {
+    height: 25px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 0.8rem;
+    width: 70%;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.bday {
+    font-size: 19px;
+    color: #141823;
+    margin: 0.8rem 0 5px 0;
+}
+
+.select-body {
+    display: inline-block;
+    height: 30px;
+    font-size: 13px;
+    border: 1px solid #bdc7d8;
+    color: #141823;
+    border-radius: 5px;
+}
+
+.gender-wrap {
+    margin: 10px 0;
+}
+
+.term {
+    font-size: 12px;
+}
+
+input.bn1 {
+    background-color: #b81515;
+    padding: 7px;
+    width: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: bn53bounce 4s infinite;
+    cursor: pointer;
+  }
+  
+  @keyframes bn53bounce {
+    5%,
+    50% {
+      transform: scale(1);
+    }
+  
+    10% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1);
+    }
+  
+    20% {
+      transform: scale(1) rotate(-5deg);
+    }
+  
+    25% {
+      transform: scale(1) rotate(5deg);
+    }
+  
+    30% {
+      transform: scale(1) rotate(-3deg);
+    }
+  
+    35% {
+      transform: scale(1) rotate(2deg);
+    }
+  
+    40% {
+      transform: scale(1) rotate(0);
+    }
+  }
