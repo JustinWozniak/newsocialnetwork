@@ -1,3 +1,29 @@
+<?php
+require "core/load.php";
+
+if (isset($_POST['first-name']) && !empty($_POST['first-name'])) {
+    $upFirst = $_POST['first-name'];
+    $upLast = $_POST['last-name'];
+    $upEmailMobile = $_POST['email-mobile'];
+    $upPassword = $_POST['up-password'];
+    $birthDay = $_POST['birth-day'];
+    $birthMonth = $_POST['birth-month'];
+    $birthYear = $_POST['birth-year'];
+    if (!empty($_POST['gen'])) {
+        $upgen = $_POST['gen'];
+    }
+    $birth = '' . $birthYear . '-' . $birthMonth . '-' . $birthDay . '';
+    if(empty($upFirst) or empty($upLast) or empty($upEmailMobile) or empty($upgen)){
+        $error = 'All Feilds are required';
+    }else{
+        $first_name = $loadFromUser->checkInput($upFirst);
+    }
+}else{
+    echo 'User not found';
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
