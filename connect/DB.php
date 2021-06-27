@@ -5,7 +5,7 @@ class DB
 
     private static function connect()
     {
-        $pdo = new PDO('mysql:host=127.0.0.1; dbname=social; charset=utf8mb4', 'root', 'Thedrunkfox67@');
+        $pdo = new PDO('mysql:host=127.0.0.1; dbname=social; charset=utf8mb4', 'root', '');
 
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
